@@ -5,6 +5,7 @@ $centen = array(50, 20, 10, 5, 2, 1);
 $geld = intval($bedrag);
 $cent = $bedrag - $geld;
 $cent = intval(round($cent * 100));
+$cent = round($cent / 5) * 5;
 
 
 euro($geldEnheden, $geld);
